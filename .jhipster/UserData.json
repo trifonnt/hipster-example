@@ -1,0 +1,50 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [
+    {
+      "relationshipName": "user",
+      "visibleForRole": "ROLE_USER,ROLE_ADMIN",
+      "readOnlyForRole": false,
+      "otherEntityName": "user",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": ["required"],
+      "otherEntityField": "login",
+      "otherEntityField2": "",
+      "includeAsObjectInDTO": false,
+      "ownerSide": true,
+      "useJPADerivedIdentifier": true,
+      "otherEntityRelationshipName": "userData"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "monetaryBalance",
+      "visibleForRole": "ROLE_USER,ROLE_ADMIN",
+      "readOnlyForRole": false,
+      "defaultValueConstant": false,
+      "fieldSequence": false,
+      "fieldType": "BigDecimal",
+      "visibleInTableMode": true
+    }
+  ],
+  "multiUniqueConstraints": [],
+  "idGenerationStrategy": "sequence",
+  "numberOfFakeRows": 10,
+  "importByExpression": "code",
+  "requiredRoleForCreate": false,
+  "requiredRoleForRead": false,
+  "requiredRoleForUpdate": false,
+  "requiredRoleForDelete": false,
+  "templateFactory": false,
+  "aggregateParents": [],
+  "changelogDate": "20220209195957",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "user_data",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "pagination"
+}
