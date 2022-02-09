@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "name.trifon.example",
+      "nativeLanguage": "bg"
+    },
+    "jhipsterVersion": "6.9.1-a02",
+    "applicationType": "monolith",
+    "baseName": "hipsterExample",
+    "packageName": "name.trifon.example",
+    "packageFolder": "name/trifon/example",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NGNlZGJkOThkYTQ2YzliYWZiMGIzOGVjMGI3ZmFlN2VhYzhkNWVhODlhN2Q0NmFlOWQ5NmJjNTk2MTA1ODcyNDEyODlmNDU3ZTNmZjU5MWM4ZDk5Y2Q5NjIwMWJkNGU5NTExMTE4Y2E2ZWUwMWNiMmUwYjg5Y2MwYzg0ZTBiOGI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "creationTimestamp": 1644436571476,
+    "testFrameworks": ["gatling", "cucumber", "protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "bg",
+    "languages": ["bg", "en", "de"],
+    "blueprints": []
+  }
+}
