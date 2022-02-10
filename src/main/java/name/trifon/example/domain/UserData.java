@@ -19,38 +19,14 @@ public class UserData implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
+    @Column(name = "id")
     private Long id;
 
-//	private RecordSource recordSource; //@Trifon
-
-	private String code;
-
-	public String getCode() {
-		return code;
-	}
-	public void setCode(String code) {
-		this.code = code;
-	}
-
-	@PrePersist
-	public void prePersist() {
-		if (code == null || code.isEmpty()) {
-			code = java.util.UUID.randomUUID().toString();
-		}
-	}
-
-
     @Column(name = "monetary_balance", precision = 21, scale = 2)
-    private BigDecimal monetaryBalance; //@Trifon
-
-
-	@PreRemove
-	private void preRemove() {
-	}
+    private BigDecimal monetaryBalance;
 
     @OneToOne(optional = false)
     @NotNull
-
     @MapsId
     @JoinColumn(name = "id")
     private User user;
@@ -58,6 +34,11 @@ public class UserData implements Serializable {
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
         return id;
+    }
+
+    public UserData id(Long id) {
+        this.setId(id);
+        return this;
     }
 
     public void setId(Long id) {
@@ -69,7 +50,7 @@ public class UserData implements Serializable {
     }
 
     public UserData monetaryBalance(BigDecimal monetaryBalance) {
-        this.monetaryBalance = monetaryBalance;
+        this.setMonetaryBalance(monetaryBalance);
         return this;
     }
 
@@ -78,7 +59,7 @@ public class UserData implements Serializable {
     }
 
     public User getUser() {
-        return user;
+        return this.user;
     }
 
     public UserData user(User user) {
@@ -89,6 +70,7 @@ public class UserData implements Serializable {
     public void setUser(User user) {
         this.user = user;
     }
+
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
     @Override
