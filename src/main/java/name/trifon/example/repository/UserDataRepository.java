@@ -13,4 +13,6 @@ import java.util.Optional; //@Trifon
 @SuppressWarnings("unused")
 @Repository
 public interface UserDataRepository extends JpaRepository<UserData, Long>, JpaSpecificationExecutor<UserData> {
-// @Trifon -}
+// @Trifon -
+
+}

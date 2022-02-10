@@ -1,15 +1,15 @@
 package name.trifon.example.service.impl;
 
 import name.trifon.example.service.UserDataService;
-import name.trifon.example.service.IdentifierService; //@Trifon-sequence
-import name.trifon.example.domain.Identifier; //@Trifon-sequence
+//import name.trifon.example.service.IdentifierService; //@Trifon-sequence
+//import name.trifon.example.domain.Identifier; //@Trifon-sequence
 import name.trifon.example.domain.UserData;
 import name.trifon.example.domain.UserDataBuilder; //@Trifon
 import name.trifon.example.repository.UserDataRepository;
 import name.trifon.example.repository.UserRepository;
 import name.trifon.example.service.dto.UserDataDTO;
-import name.trifon.example.service.dto.IdentifierDTO; //@Trifon-sequence
-import name.trifon.example.service.mapper.IdentifierMapper; //@Trifon-sequence
+//import name.trifon.example.service.dto.IdentifierDTO; //@Trifon-sequence
+//import name.trifon.example.service.mapper.IdentifierMapper; //@Trifon-sequence
 import name.trifon.example.service.mapper.UserDataMapper;
 import name.trifon.example.service.util.SequenceUtil; //@Trifon-sequence
 import name.trifon.example.service.util.ParseUtil; //@Trifon-import
@@ -43,10 +43,10 @@ public class UserDataServiceImpl implements UserDataService {
     private final Logger log = LoggerFactory.getLogger(UserDataServiceImpl.class);
 
 	//@Trifon - sequence
-	@Autowired
-	private IdentifierService identifierService;
-	@Autowired
-	private IdentifierMapper identifierMapper;
+//	@Autowired
+//	private IdentifierService identifierService;
+//	@Autowired
+//	private IdentifierMapper identifierMapper;
 	//@Trifon
 	@Autowired
 	private UserDataServiceHelper userDataServiceHelper;

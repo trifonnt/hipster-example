@@ -196,9 +196,9 @@ public class UserDataResource {
 
 		UserDataDTO userDataDTO = new UserDataDTO();
 		// TODO - Fields which are sequence controlled should be with <GENERATED>
-		if (userDataDTO.getValue() == null || userDataDTO.getValue().isEmpty()) {
-			userDataDTO.setValue("<GENERATED>");
-		}
+//		if (userDataDTO.getValue() == null || userDataDTO.getValue().isEmpty()) {
+//			userDataDTO.setValue("<GENERATED>");
+//		}
 
 		return ResponseEntity.ok().body(userDataDTO);
 	}
